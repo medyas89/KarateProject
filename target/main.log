@@ -1,0 +1,247 @@
+13:39:25.988 karate.env system property was:  
+13:39:26.518 request:
+1 > POST https://api-nodejs-todolist.herokuapp.com/user/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-nodejs-todolist.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.9)
+{"email":"muh.nurali43@gmail.com","password":"12345678"}
+
+13:39:30.279 response time in milliseconds: 3759,94
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 360
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 14 Feb 2022 12:39:29 GMT
+1 < Etag: W/"168-V7AsDcwk2OoqaAfGjBi3IxUNN+g"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user":{"age":20,"_id":"61f5010d008fd2001730adab","name":"Muhammad Nur Ali","email":"muh.nurali43@gmail.com","createdAt":"2022-01-29T08:55:41.628Z","updatedAt":"2022-02-14T12:39:28.571Z","__v":2233},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ4NDIzNjh9.Te8pvKNsBL5fbpiXF3AUVKCXGRfRJs307HngRnFDdqM"}
+
+13:39:30.295 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ4NDIzNjh9.Te8pvKNsBL5fbpiXF3AUVKCXGRfRJs307HngRnFDdqM
+13:39:30.308 request:
+1 > GET https://api-nodejs-todolist.herokuapp.com/task
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ4NDIzNjh9.Te8pvKNsBL5fbpiXF3AUVKCXGRfRJs307HngRnFDdqM
+1 > Connection: Keep-Alive
+1 > Host: api-nodejs-todolist.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.9)
+
+13:39:32.428 response time in milliseconds: 2110,68
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 8023
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 14 Feb 2022 12:39:32 GMT
+1 < Etag: W/"1f57-+eafsA97F00r/xwARABniD59SKQ"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"count":41,"data":[{"completed":false,"_id":"61fa32c5ae04d20017bbad21","description":"by","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-02T07:29:09.606Z","updatedAt":"2022-02-12T14:31:59.882Z","__v":0},{"completed":false,"_id":"6207a7bc89a8670017aee67e","description":"true","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T12:27:40.668Z","updatedAt":"2022-02-13T13:32:07.816Z","__v":0},{"completed":false,"_id":"6207b07b89a8670017aee684","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T13:04:59.907Z","updatedAt":"2022-02-12T13:04:59.907Z","__v":0},{"completed":false,"_id":"6207b0de89a8670017aee685","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T13:06:38.388Z","updatedAt":"2022-02-12T13:06:38.388Z","__v":0},{"completed":false,"_id":"6207b11089a8670017aee686","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T13:07:28.072Z","updatedAt":"2022-02-12T13:07:28.072Z","__v":0},{"completed":false,"_id":"6207c15a89a8670017aee689","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:16:58.106Z","updatedAt":"2022-02-12T14:16:58.106Z","__v":0},{"completed":false,"_id":"6207c45589a8670017aee68b","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:29:41.621Z","updatedAt":"2022-02-12T14:29:41.621Z","__v":0},{"completed":false,"_id":"6207c4f189a8670017aee68d","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:32:17.655Z","updatedAt":"2022-02-12T14:32:17.655Z","__v":0},{"completed":false,"_id":"6207c79c89a8670017aee68f","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:43:40.065Z","updatedAt":"2022-02-12T14:43:40.065Z","__v":0},{"completed":false,"_id":"6207c7cc89a8670017aee691","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:44:28.649Z","updatedAt":"2022-02-12T14:44:28.649Z","__v":0},{"completed":false,"_id":"6207c82689a8670017aee693","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:45:58.555Z","updatedAt":"2022-02-12T14:45:58.555Z","__v":0},{"completed":false,"_id":"6207c85e89a8670017aee695","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:46:54.178Z","updatedAt":"2022-02-12T14:46:54.178Z","__v":0},{"completed":false,"_id":"6207c8a489a8670017aee697","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:48:04.617Z","updatedAt":"2022-02-12T14:48:04.617Z","__v":0},{"completed":false,"_id":"6207c8c789a8670017aee699","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:48:39.824Z","updatedAt":"2022-02-12T14:48:39.824Z","__v":0},{"completed":false,"_id":"6207c8fa89a8670017aee69b","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:49:30.928Z","updatedAt":"2022-02-12T14:49:30.928Z","__v":0},{"completed":false,"_id":"6207c99e89a8670017aee69d","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:52:14.981Z","updatedAt":"2022-02-12T14:52:14.981Z","__v":0},{"completed":false,"_id":"6207ca2d89a8670017aee69f","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:54:37.266Z","updatedAt":"2022-02-12T14:54:37.266Z","__v":0},{"completed":false,"_id":"6207caf489a8670017aee6a1","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:57:56.351Z","updatedAt":"2022-02-12T14:57:56.351Z","__v":0},{"completed":false,"_id":"6207cb5f89a8670017aee6a4","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T14:59:43.612Z","updatedAt":"2022-02-12T14:59:43.612Z","__v":0},{"completed":false,"_id":"6207cbbd89a8670017aee6a5","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T15:01:17.656Z","updatedAt":"2022-02-12T15:01:17.656Z","__v":0},{"completed":false,"_id":"6207cc6389a8670017aee6a9","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T15:04:03.516Z","updatedAt":"2022-02-12T15:04:03.516Z","__v":0},{"completed":false,"_id":"620909b25b72400017b8f039","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T13:37:54.541Z","updatedAt":"2022-02-13T13:37:54.541Z","__v":0},{"completed":false,"_id":"620909f05b72400017b8f03b","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T13:38:56.858Z","updatedAt":"2022-02-13T13:38:56.858Z","__v":0},{"completed":false,"_id":"6209121c5b72400017b8f05d","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:13:48.682Z","updatedAt":"2022-02-13T14:13:48.682Z","__v":0},{"completed":false,"_id":"620912455b72400017b8f060","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:14:29.478Z","updatedAt":"2022-02-13T14:14:29.478Z","__v":0},{"completed":false,"_id":"620912815b72400017b8f065","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:15:29.174Z","updatedAt":"2022-02-13T14:15:29.174Z","__v":0},{"completed":false,"_id":"620912b15b72400017b8f067","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:16:17.577Z","updatedAt":"2022-02-13T14:16:17.577Z","__v":0},{"completed":false,"_id":"620912ba5b72400017b8f06a","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:16:26.506Z","updatedAt":"2022-02-13T14:16:26.506Z","__v":0},{"completed":false,"_id":"6209140f5b72400017b8f06f","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:22:07.428Z","updatedAt":"2022-02-13T14:22:07.428Z","__v":0},{"completed":false,"_id":"620914185b72400017b8f072","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:22:16.098Z","updatedAt":"2022-02-13T14:22:16.098Z","__v":0},{"completed":false,"_id":"6209153f5b72400017b8f07b","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:27:11.747Z","updatedAt":"2022-02-13T14:27:11.747Z","__v":0},{"completed":false,"_id":"620915495b72400017b8f07e","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:27:21.644Z","updatedAt":"2022-02-13T14:27:21.644Z","__v":0},{"completed":false,"_id":"620915d05b72400017b8f084","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:29:36.145Z","updatedAt":"2022-02-13T14:29:36.145Z","__v":0},{"completed":false,"_id":"620915d85b72400017b8f087","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:29:44.793Z","updatedAt":"2022-02-13T14:29:44.793Z","__v":0},{"completed":false,"_id":"620916815b72400017b8f08d","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:32:33.387Z","updatedAt":"2022-02-13T14:32:33.387Z","__v":0},{"completed":false,"_id":"62091aa65b72400017b8f096","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:50:14.662Z","updatedAt":"2022-02-13T14:50:14.662Z","__v":0},{"completed":false,"_id":"62091b6e5b72400017b8f09f","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:53:34.664Z","updatedAt":"2022-02-13T14:53:34.664Z","__v":0},{"completed":false,"_id":"62091bb65b72400017b8f0a8","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:54:46.477Z","updatedAt":"2022-02-13T14:54:46.477Z","__v":0},{"completed":false,"_id":"62091c4c5b72400017b8f0b1","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:57:16.767Z","updatedAt":"2022-02-13T14:57:16.767Z","__v":0},{"completed":false,"_id":"62091d865b72400017b8f0ba","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T15:02:30.285Z","updatedAt":"2022-02-13T15:02:30.285Z","__v":0},{"completed":true,"_id":"620128f526472a00177c7cb1","description":"My Hello World","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-07T14:13:09.842Z","updatedAt":"2022-02-07T14:14:11.484Z","__v":0}]}
+
+13:39:32.435 [print] 41
+tpClient/4.5.11 (Java/11.0.9)
+{"email":"muh.nurali43@gmail.com","password":"12345678"}
+
+16:02:52.848 response time in milliseconds: 3177,61
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 360
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Feb 2022 15:02:51 GMT
+1 < Etag: W/"168-tfZVpaPpoGDAtH8Btd+iDo4pXD8"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user":{"age":20,"_id":"61f5010d008fd2001730adab","name":"Muhammad Nur Ali","email":"muh.nurali43@gmail.com","createdAt":"2022-01-29T08:55:41.628Z","updatedAt":"2022-02-13T15:02:50.628Z","__v":2200},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjQ1NzB9.apIJ4mSgYzcXQbkpBBcZsbKuaHs-G82byK2syfI_LDA"}
+
+16:02:52.849 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjQ1NzB9.apIJ4mSgYzcXQbkpBBcZsbKuaHs-G82byK2syfI_LDA
+16:02:52.853 request:
+1 > GET https://api-nodejs-todolist.herokuapp.com/task/6207a7bc89a8670017aee67e
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjQ1NzB9.apIJ4mSgYzcXQbkpBBcZsbKuaHs-G82byK2syfI_LDA
+1 > Connection: Keep-Alive
+1 > Host: api-nodejs-todolist.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.9)
+
+16:02:54.791 response time in milliseconds: 1937,59
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 218
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Feb 2022 15:02:53 GMT
+1 < Etag: W/"da-XBBfIi1h26QiGcH8eLiql03YYjE"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"success":true,"data":{"completed":false,"_id":"6207a7bc89a8670017aee67e","description":"true","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T12:27:40.668Z","updatedAt":"2022-02-13T13:32:07.816Z","__v":0}}
+
+16:02:54.799 assertion failed: path: $.data.description, actual: 'true', expected: 'test', reason: not equal
+16:02:54.816 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:02:54.824 request:
+1 > POST https://api-nodejs-todolist.herokuapp.com/user/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-nodejs-todolist.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.9)
+{"email":"muh.nurali43@gmail.com","password":"12345678"}
+
+16:02:58.245 response time in milliseconds: 3420,35
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 360
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Feb 2022 15:02:57 GMT
+1 < Etag: W/"168-MJzHrNwJRvDcLxTlP5e382ZCPJc"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user":{"age":20,"_id":"61f5010d008fd2001730adab","name":"Muhammad Nur Ali","email":"muh.nurali43@gmail.com","createdAt":"2022-01-29T08:55:41.628Z","updatedAt":"2022-02-13T15:02:56.022Z","__v":2201},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjQ1NzV9.6rHWwGIOPWE0CBZR3B8wnpK3mZN9sfY4pJIK8_B69cA"}
+
+16:02:58.247 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjQ1NzV9.6rHWwGIOPWE0CBZR3B8wnpK3mZN9sfY4pJIK8_B69cA
+16:02:58.251 request:
+1 > PUT https://api-nodejs-todolist.herokuapp.com/task/6207a7bc89a8670017aee67e
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjQ1NzV9.6rHWwGIOPWE0CBZR3B8wnpK3mZN9sfY4pJIK8_B69cA
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-nodejs-todolist.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.9)
+{"description":true}
+
+16:03:00.483 response time in milliseconds: 2231,65
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 218
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Feb 2022 15:02:59 GMT
+1 < Etag: W/"da-XBBfIi1h26QiGcH8eLiql03YYjE"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"success":true,"data":{"completed":false,"_id":"6207a7bc89a8670017aee67e","description":"true","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T12:27:40.668Z","updatedAt":"2022-02-13T13:32:07.816Z","__v":0}}
+
+16:03:00.485 [print] true
+ner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T13:37:54.541Z","updatedAt":"2022-02-13T13:37:54.541Z","__v":0},{"completed":false,"_id":"620909f05b72400017b8f03b","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T13:38:56.858Z","updatedAt":"2022-02-13T13:38:56.858Z","__v":0},{"completed":false,"_id":"6209121c5b72400017b8f05d","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:13:48.682Z","updatedAt":"2022-02-13T14:13:48.682Z","__v":0},{"completed":false,"_id":"620912455b72400017b8f060","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:14:29.478Z","updatedAt":"2022-02-13T14:14:29.478Z","__v":0},{"completed":false,"_id":"620912815b72400017b8f065","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:15:29.174Z","updatedAt":"2022-02-13T14:15:29.174Z","__v":0},{"completed":false,"_id":"620912b15b72400017b8f067","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:16:17.577Z","updatedAt":"2022-02-13T14:16:17.577Z","__v":0},{"completed":false,"_id":"620912ba5b72400017b8f06a","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:16:26.506Z","updatedAt":"2022-02-13T14:16:26.506Z","__v":0},{"completed":false,"_id":"6209140f5b72400017b8f06f","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:22:07.428Z","updatedAt":"2022-02-13T14:22:07.428Z","__v":0},{"completed":false,"_id":"620914185b72400017b8f072","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:22:16.098Z","updatedAt":"2022-02-13T14:22:16.098Z","__v":0},{"completed":false,"_id":"6209153f5b72400017b8f07b","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:27:11.747Z","updatedAt":"2022-02-13T14:27:11.747Z","__v":0},{"completed":false,"_id":"620915495b72400017b8f07e","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:27:21.644Z","updatedAt":"2022-02-13T14:27:21.644Z","__v":0},{"completed":false,"_id":"620915d05b72400017b8f084","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:29:36.145Z","updatedAt":"2022-02-13T14:29:36.145Z","__v":0},{"completed":false,"_id":"620915d85b72400017b8f087","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:29:44.793Z","updatedAt":"2022-02-13T14:29:44.793Z","__v":0},{"completed":false,"_id":"620916815b72400017b8f08d","description":"test","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-13T14:32:33.387Z","updatedAt":"2022-02-13T14:32:33.387Z","__v":0},{"completed":true,"_id":"620128f526472a00177c7cb1","description":"My Hello World","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-07T14:13:09.842Z","updatedAt":"2022-02-07T14:14:11.484Z","__v":0}]}
+
+15:32:53.902 [print] 36
+15:32:53.919 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:32:53.925 request:
+1 > POST https://api-nodejs-todolist.herokuapp.com/user/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-nodejs-todolist.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.9)
+{"email":"muh.nurali43@gmail.com","password":"12345678"}
+
+15:32:58.352 response time in milliseconds: 4425,58
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 360
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Feb 2022 14:32:57 GMT
+1 < Etag: W/"168-4PbCiJepJ4RYL3RwFytK03z2HLQ"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user":{"age":20,"_id":"61f5010d008fd2001730adab","name":"Muhammad Nur Ali","email":"muh.nurali43@gmail.com","createdAt":"2022-01-29T08:55:41.628Z","updatedAt":"2022-02-13T14:32:55.906Z","__v":2165},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjI3NzR9.aiOhUDfa0tLC3t0syt_OSqVsOEkxtbspKyWNtpjV8Qo"}
+
+15:32:58.354 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjI3NzR9.aiOhUDfa0tLC3t0syt_OSqVsOEkxtbspKyWNtpjV8Qo
+15:32:58.358 request:
+1 > GET https://api-nodejs-todolist.herokuapp.com/task/6207a7bc89a8670017aee67e
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjI3NzR9.aiOhUDfa0tLC3t0syt_OSqVsOEkxtbspKyWNtpjV8Qo
+1 > Connection: Keep-Alive
+1 > Host: api-nodejs-todolist.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.9)
+
+15:33:00.534 response time in milliseconds: 2177,13
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 218
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Feb 2022 14:32:59 GMT
+1 < Etag: W/"da-XBBfIi1h26QiGcH8eLiql03YYjE"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"success":true,"data":{"completed":false,"_id":"6207a7bc89a8670017aee67e","description":"true","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T12:27:40.668Z","updatedAt":"2022-02-13T13:32:07.816Z","__v":0}}
+
+15:33:00.539 assertion failed: path: $.data.description, actual: 'true', expected: 'reading book', reason: not equal
+15:33:00.556 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:33:00.562 request:
+1 > POST https://api-nodejs-todolist.herokuapp.com/user/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-nodejs-todolist.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.9)
+{"email":"muh.nurali43@gmail.com","password":"12345678"}
+
+15:33:03.954 response time in milliseconds: 3391,19
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 360
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Feb 2022 14:33:03 GMT
+1 < Etag: W/"168-ZXpBsghP6QfikIyo+U+iCkhFN3c"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"user":{"age":20,"_id":"61f5010d008fd2001730adab","name":"Muhammad Nur Ali","email":"muh.nurali43@gmail.com","createdAt":"2022-01-29T08:55:41.628Z","updatedAt":"2022-02-13T14:33:01.782Z","__v":2166},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjI3ODF9.vxESBI0OA7f9pRDP6vksVnj6nfJR906npbFJcFTnyOI"}
+
+15:33:03.955 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjI3ODF9.vxESBI0OA7f9pRDP6vksVnj6nfJR906npbFJcFTnyOI
+15:33:03.958 request:
+1 > PUT https://api-nodejs-todolist.herokuapp.com/task/6207a7bc89a8670017aee67e
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWY1MDEwZDAwOGZkMjAwMTczMGFkYWIiLCJpYXQiOjE2NDQ3NjI3ODF9.vxESBI0OA7f9pRDP6vksVnj6nfJR906npbFJcFTnyOI
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api-nodejs-todolist.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/11.0.9)
+{"description":true}
+
+15:33:06.141 response time in milliseconds: 2182,87
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 218
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Feb 2022 14:33:05 GMT
+1 < Etag: W/"da-XBBfIi1h26QiGcH8eLiql03YYjE"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"success":true,"data":{"completed":false,"_id":"6207a7bc89a8670017aee67e","description":"true","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T12:27:40.668Z","updatedAt":"2022-02-13T13:32:07.816Z","__v":0}}
+
+15:33:06.143 [print] true
+< Connection: keep-alive
+1 < Content-Length: 218
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 13 Feb 2022 14:30:05 GMT
+1 < Etag: W/"da-XBBfIi1h26QiGcH8eLiql03YYjE"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{"success":true,"data":{"completed":false,"_id":"6207a7bc89a8670017aee67e","description":"true","owner":"61f5010d008fd2001730adab","createdAt":"2022-02-12T12:27:40.668Z","updatedAt":"2022-02-13T13:32:07.816Z","__v":0}}
+
+15:30:06.379 [print] true
